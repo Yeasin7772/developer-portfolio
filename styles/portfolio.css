@@ -13,6 +13,7 @@ body{
     color: #FD6E0A;
 }
 .btn-primary{
+    /* margin-top: 6px; */
     border-radius: 5px;
     background: #FD6E0A;
     border: 0;
@@ -71,6 +72,7 @@ nav a{
     background-position: bottom right ,top left;
 }
 .banner{
+    /* height: 100vh; */
     padding:30px 30px 0px 150px;
     display: flex;
     align-items: center;
@@ -207,3 +209,70 @@ footer{
 
     margin-right: 25px;
 }
+
+.hide{
+    display: none;
+}
+
+
+/* responsive mobile portfolio */
+@media screen and ( max-width: 576px ) {
+    .header{
+        background-image: none;
+    }
+
+    nav,
+    nav > ul,
+    .skill-container,
+     .resume-container,
+      footer,
+       .about-info-container, 
+       .banner{
+        flex-direction: column;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .banner{
+        padding: 20px;
+    }
+    
+    
+    footer{
+        padding: 10px;
+       
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea{
+        width: 80%;
+    }
+
+    
+}
+/* responsive medium portfolio */
+
+@media screen and ( min-width: 576px ) and ( max-width:960px ) {
+    .skill-container, .resume-container{
+        /* flex-direction: column; */
+    }
+    footer, .about{
+        padding: 10px;
+       
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
